@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #0f2027;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    color: white;
+  }
+  
+  /* 3D Particle Background */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+  }
+  
+  /* Intro Section */
+  .intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 2s ease;
+  }
+  
+  .intro h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  
+  .intro span {
+    color: #00ffe7;
+  }
+  
+  .intro p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffe7;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.4s;
+  }
+  
+  .buttons a:hover {
+    background: #00ffe7;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px #00ffe7aa;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    padding: 120px 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease;
+  }
+  
+  .content-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ffe7;
+  }
+  
+  .content-section p, .content-section ul {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    color: #ccc;
+  }
+  
+  /* Cards for Projects */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: 280px;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.3);
+    margin-top: 50px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
