@@ -1,127 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonia Rani - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-            color: #333;
-        }
-        header {
-            background-color: #1f1f1f;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            border-bottom: 2px solid #1f1f1f;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonia Rani - Ultra Modern Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Sonia Rani</h1>
-    <p>B.C.A Student | Freelancer | Tech Enthusiast</p>
-</header>
+  <!-- 3D Particle Background -->
+  <div id="particles-js"></div>
 
-<section>
-    <h2>Contact Information</h2>
-    <ul>
-        <li><strong>Phone:</strong> 99154-33799</li>
-        <li><strong>Email:</strong> soniarani33799@gmail.com</li>
-        <li><strong>Address:</strong> VPO Moonak, Tehsil Moonak, Dist Sangrur, Punjab, 148033</li>
-        <li><strong>Languages:</strong> English, Hindi, Punjabi</li>
-    </ul>
-</section>
+  <!-- Intro Section -->
+  <section class="intro">
+    <h1>Hi, I'm <span>Sonia Rani</span></h1>
+    <p>Web Developer | Creative Designer | Digital Marketer</p>
+    <div class="buttons">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </section>
 
-<section>
-    <h2>Career Objective</h2>
-    <p>
-        Seeking a career that provides opportunities to apply my technical and communication skills,
-        with a focus on professional growth, innovation, and flexibility.
-    </p>
-</section>
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>I am pursuing B.C.A from Punjabi University. Passionate about creating stunning web experiences with cutting-edge technologies. Skilled in HTML, CSS, JavaScript, Java, Python, and Digital Marketing.</p>
+  </section>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><strong>10th:</strong> PSEB Mohali - A+ Grade (2020)</li>
-        <li><strong>12th:</strong> PSEB Mohali - 90.00% (2022)</li>
-        <li><strong>B.C.A:</strong> Punjabi University Patiala (Pursuing)</li>
-    </ul>
-</section>
+  <!-- Projects Section -->
+  <section id="projects" class="content-section">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Myntra Clone</h3>
+        <p>HTML, CSS based e-commerce frontend.</p>
+        <a href="https://github.com/soniarani33799/Myntra-clone" target="_blank">View Code</a>
+      </div>
+      <div class="card">
+        <h3>Calculator App</h3>
+        <p>Responsive Calculator using HTML, CSS, JavaScript.</p>
+        <a href="https://github.com/soniarani33799/calculatur" target="_blank">View Code</a>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Experience</h2>
-    <p>
-        <strong>Freelancer - India Mart Intermesh Ltd.</strong> <br>
-        3 Months Experience in Freelancing.
-    </p>
-</section>
+  <!-- Contact Section -->
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:soniarani33799@gmail.com">soniarani33799@gmail.com</a></p>
+    <p>Phone: +91 9915433799</p>
+    <p>Location: Moonak, Sangrur, Punjab, India</p>
+  </section>
 
-<section>
-    <h2>Strengths</h2>
-    <ul>
-        <li>Honest and Responsible</li>
-        <li>Self-motivated with Strong Dedication</li>
-        <li>Positive Attitude</li>
-        <li>Excellent Communication Skills</li>
-    </ul>
-</section>
+  <footer>
+    <p>© 2025 Sonia Rani</p>
+  </footer>
 
-<section>
-    <h2>Personal Details</h2>
-    <ul>
-        <li><strong>Father's Name:</strong> Sh. Binder Singh</li>
-        <li><strong>Date of Birth:</strong> 01/01/2005</li>
-        <li><strong>Gender:</strong> Female</li>
-        <li><strong>Marital Status:</strong> Unmarried</li>
-    </ul>
-</section>
-
-<footer>
-    © 2025 Sonia Rani | All Rights Reserved
-</footer>
+  <!-- Particle JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
